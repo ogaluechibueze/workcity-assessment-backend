@@ -77,5 +77,8 @@ Projects
   "password": "password123",
   "role": "admin"
 }
+  LOGIN AS ADMIN TO TEST
+  email: admin@example.com
+  password: password123 
 
 note: admin can create,update or delete clients and projects while users are restricted to do this,users can only view 
