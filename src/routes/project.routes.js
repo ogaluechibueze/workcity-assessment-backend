@@ -15,8 +15,8 @@ router.route('/')
 
 router.route('/:id')
   .get(getProject)
-  .put(protect, validate(updateProjectSchema), updateProject)
-  .delete(protect, deleteProject);
+  .put(authorize('admin'), validate(updateProjectSchema), updateProject)
+  .delete(authorize('admin'), deleteProject);
 
 router.get('/client/:clientId', getProjectsByClient);
 

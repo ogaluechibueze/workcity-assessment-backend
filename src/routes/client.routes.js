@@ -15,7 +15,7 @@ router.route('/')
 
 router.route('/:id')
   .get(getClient)
-  .put(protect, validate(updateClientSchema), updateClient)
-  .delete(protect, deleteClient);
+  .put(authorize('admin'), validate(updateClientSchema), updateClient)
+  .delete(authorize('admin'), deleteClient);
 
 module.exports = router;
