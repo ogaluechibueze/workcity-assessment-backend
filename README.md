@@ -69,3 +69,13 @@ Projects
     DELETE /api/projects/:id (admin only)
     GET /api/projects/client/:clientId
 
+## Create admin via API directly
+   POST http://localhost:5000/api/auth/signup
+{
+  "name": "Admin User",
+  "email": "admin@example.com",
+  "password": "password123",
+  "role": "admin"
+}
+
+note: admin can create,update or delete clients and projects while users are restricted to do this,users can only view 
