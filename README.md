@@ -42,6 +42,7 @@ npm install
 MONGO_URI=mongodb://localhost:27017/workcity
 JWT_SECRET=your_jwt_secret
 PORT=5000
+note: make sure your update MONGO_URI with your own MONGODB connection string
 
 4. Start server (dev mode)
 npm run dev
